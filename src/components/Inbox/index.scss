@@ -1,0 +1,122 @@
+.Conversation-list{
+    .row{
+	    padding: 1rem;
+		display:flex;
+		justify-content:space-between;
+        .search-col{
+			.ant-input{
+			    background-color: #f7f8fa;
+				border: 0px;
+			}
+			flex: 1;
+			margin-right: 1rem;
+        }
+        .sortby-col{
+		    display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 0rem 1rem 0rem 1rem;
+			:hover{
+				background: #f7f8fa;
+			}
+        }
+    }
+	
+	.ant-tabs{
+		.ant-tabs-bar{
+			margin-bottom:0.5rem;
+			border-bottom: 0px;
+			.ant-tabs-nav-container{
+				.ant-tabs-nav-wrap{
+					margin-left: 18px;
+					.ant-tabs-nav-scroll{
+					
+						.ant-tabs-tab-active{
+							color: black;
+							background-color : #e2e4e9;
+							border: 1px solid #e2e4e9;
+							border-radius: 20%;
+						}
+						
+						.ant-tabs-tab:hover{
+							color: black;
+							background-color : #f0f0f1;
+							border: 1px solid #f0f0f1;
+							border-radius: 20%;
+						}
+							
+						.ant-tabs-tab{
+							margin:0rem 1rem 0rem 0rem; 
+							padding:0.3rem
+						}
+						.ant-tabs-ink-bar-animated{
+							display: none !important;
+							transform: translate3d(335px, 0px, 0px) !important;
+							width: 0px !important;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	.conversation-list{
+		.ant-card {
+		color: black;
+		padding: 0.5rem 1rem 0.5rem 1.5rem;
+			.ant-card-head{
+				color: black;
+				.ant-card-extra{
+					color: black;
+				}
+				.ant-card-head-title{
+					padding: 0px;
+					p {
+						margin: 0px;
+					}
+				}
+				border-bottom: 0px;
+			}
+			.ant-card-body{
+				padding: 0px 10px;
+				.row{
+					display:flex;
+					padding:0rem;
+					margin-bottom: 0px;
+					justify-content: space-between;
+					.circle-wrap{
+						border: 1px solid #e8eaed;
+						border-radius: 50%;
+						background-color: #e8eaed;
+						padding: 2px 6px
+					}
+					
+				}
+				p{
+					margin: 0px;
+				}				
+			}
+		}
+		.active{
+			background-color: #367fee;
+			color: white;
+			.ant-card-head{
+				color: white;
+				.ant-card-extra{
+					color: white;
+				}
+			}
+			.ant-card-body{
+			.row{
+			.circle-wrap{
+				border: 1px solid #73a6f3;
+				border-radius: 50%;
+				background-color: #73a6f3;
+				padding: 2px 6px
+			}
+			}
+			}
+		}
+	}
+	
+}
